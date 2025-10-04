@@ -1,8 +1,8 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: center; 
-  padding: 93px 50px 93px; 
+  align-items: center;
+  padding: 93px 50px 93px;
 }
 
 .header__links-list {
@@ -10,16 +10,22 @@
   gap: 32px;
   font-family: 'Raleway' , sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 18.59px;
   list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none;
-  
+  list-style: none;  
 }
+
 .links_active {
   text-decoration-line: none;
+}
+
+.links_underline {
+  border-bottom: 1px solid black;
+  text-decoration-line: none;
+  /*Меняет нижнее подчеркивание ссылок на приближенное к макету*/
 }
 
 .header__logo-image {
@@ -69,26 +75,27 @@
   color: #fff;
   font-weight: 700;
   font-size: 100px;
-  line-height: 133%;
+  line-height: 128%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
 .aligned-text_left {
   display: block;
+  padding-bottom: 7px;
   text-align: start;
-  
 }
 
 .aligned-text_center {
   display: block;
   margin-left: 30px;
+  padding-bottom: 8px;
   text-align: center;
 }
 
 .aligned-text_right {
   display: block;
-  margin-left: 61.5%;
+  margin-left: 61.4%;
   text-align: end;
 }
 
@@ -101,19 +108,19 @@
 }
 
 .letter-spacing-extended {
-  padding: 0 0 10px;
+  padding: 0 0 9px;
   color: #fff;
   font-family: 'Raleway' , sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  word-spacing:19px;
+  word-spacing:18.6px;
 }
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid; 
+  border: 1px solid;
   padding: 10px;
   color: #fff;
   font-family: 'Raleway' , sans-serif;
@@ -121,6 +128,7 @@
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
@@ -231,7 +239,7 @@
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background-color: black;  
+  background-color: black;
 }
 
 .about__logo-image {
@@ -260,8 +268,8 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 50px;
   margin: 0 0 80px;
+  padding: 0 50px;
 }
 
 .footer__menu-list {
