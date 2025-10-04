@@ -14,13 +14,15 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a href="" class="links_active">главная</a>
+            <a href="#main__cover" class="links_underline links_active"
+              >главная</a
+            >
           </li>
           <li>
-            <a href="" class="links_underline">посмотреть лоты</a>
+            <a href="#main__lots" class="links_underline">посмотреть лоты</a>
           </li>
           <li>
-            <a href="" class="links_underline">об аукционе</a>
+            <a href="#main__about" class="links_underline">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -46,13 +48,17 @@
             >
           </li>
           <li>
-            <p>наб. Принсенграхт 263- 265, Амстердам</p>
+            <a
+              href="https://maps.app.goo.gl/8cJChdWFXqpqJckt5"
+              class="links_map" target="_blank"
+              >наб. Принсенграхт 263- 265, Амстердам</a
+            >
           </li>
         </ul>
       </address>
     </header>
     <main>
-      <section class="cover">
+      <section class="cover" id="main__cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text_left">Оно</span>
@@ -63,16 +69,16 @@
           <p class="letter-spacing-extended">
             аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
+      <section class="lots" id="main__lots">
         <h2 class="lots__title">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a href="" class="card-link">
-              <div class="overlay"></div>
               <article class="card card_type_film">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -86,8 +92,8 @@
           </li>
           <li class="lots__card-list-item">
             <a href="" class="card-link">
-              <div class="overlay"></div>
               <article class="card card_type_book">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -104,8 +110,8 @@
           </li>
           <li class="lots__card-list-item">
             <a href="" class="card-link">
-              <div class="overlay"></div>
               <article class="card card_type_picture">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -123,7 +129,7 @@
           <a href="" class="links_underline">посмотреть больше</a>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="main__about">
         <div class="about__logo">
           <a href="">
             <img
@@ -170,32 +176,46 @@
             >
           </li>
           <li>
-            <p>наб. Принсенграхт 263-265, Амстердам</p>
+            <a
+              href="https://maps.app.goo.gl/8cJChdWFXqpqJckt5"
+              class="links_map" target="_blank"
+              >наб. Принсенграхт 263-265, Амстердам</a
+            >
           </li>
         </ul>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li>
-            <a href="" class="links_active">главная</a>
+            <a href="#main__cover" class="links_underline links_active"
+              >главная</a
+            >
           </li>
           <li>
-            <a href="" class="links_underline">посмотреть лоты</a>
+            <a href="#main__lots" class="links_underline">посмотреть лоты</a>
           </li>
           <li>
-            <a href="" class="links_underline">об аукционе</a>
+            <a href="#main__about" class="links_underline">об аукционе</a>
           </li>
         </ul>
       </nav>
       <ul class="footer__social-list">
         <li>
           <a href=""
-            ><img src="./images/yt.svg" alt="Yt" class="footer__social-icon"
+            ><img
+              src="./images/yt.svg"
+              target="_blank"
+              alt="Yt"
+              class="footer__social-icon"
           /></a>
         </li>
         <li>
           <a href=""
-            ><img src="./images/vk.svg" alt="VK" class="footer__social-icon"
+            ><img
+              src="./images/vk.svg"
+              target="_blank"
+              alt="VK"
+              class="footer__social-icon"
           /></a>
         </li>
         <li>
@@ -204,6 +224,7 @@
               src="./images/pinterest.svg"
               alt="pinterest"
               class="footer__social-icon"
+              target="_blank"
           /></a>
         </li>
       </ul>

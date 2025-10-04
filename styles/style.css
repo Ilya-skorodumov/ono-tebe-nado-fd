@@ -1,16 +1,21 @@
+*{
+  scroll-behavior:smooth
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 93px 50px 93px;
+  padding: 91px 50px 93px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  padding-bottom: 3px;
+  gap: 32.9px;
   font-family: 'Raleway' , sans-serif;
   font-weight: 400;
-  font-size: 18.59px;
+  font-size: 18px;
   list-style: circle;
 }
 
@@ -18,14 +23,12 @@
   list-style: none;
 }
 
-.links_active {
-  text-decoration-line: none;
+.links_underline {
+  text-underline-offset:4px;
 }
 
-.links_underline {
-  border-bottom: 1px solid black;
+.links_active {
   text-decoration-line: none;
-  /*Меняет нижнее подчеркивание ссылок на приближенное к макету*/
 }
 
 .header__logo-image {
@@ -44,13 +47,17 @@
 }
 
 .header__address {
+  padding-bottom: 2px;
   justify-self: end;
 }
 
+.links_map {
+  text-decoration-line: none;
+}
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,6 +70,7 @@
 
 .overlay {
   position: absolute;
+  inset: 0;
   z-index: 0;
   width: 100%;
   min-height: 100%;
@@ -95,7 +103,7 @@
 
 .aligned-text_right {
   display: block;
-  margin-left: 61.4%;
+  margin-right: -0.3em;
   text-align: end;
 }
 
@@ -108,7 +116,7 @@
 }
 
 .letter-spacing-extended {
-  padding: 0 0 9px;
+  padding: 0 0 10px;
   color: #fff;
   font-family: 'Raleway' , sans-serif;
   font-weight: 400;
@@ -159,6 +167,7 @@
   position: relative;
   min-width: 100%;
   min-height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -167,31 +176,22 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .card_type_film {
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
   background-image: url("../images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
 }
+
 .card_type_book {
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
   background-image: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
 }
+
 .card_type_picture {
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
   background-image: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -227,7 +227,7 @@
   grid-template-rows: min-content;
   gap: 25px;
   margin: 0 24px 180px;
-  padding-top: 37px;
+  padding-top: 35px;
 }
 
 .about__logo {
@@ -269,7 +269,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 0 80px;
-  padding: 0 50px;
+  padding: 1px 50px;
 }
 
 .footer__menu-list {
